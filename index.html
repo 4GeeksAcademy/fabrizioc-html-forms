@@ -34,7 +34,9 @@
             <div class="row mb-3">
               <div class="col-md-6">
                 <div class="input-group">
-                  <span class="input-group-text">#</span>
+                  <span class="input-group-text">
+                    <i class="bi bi-hash"></i>
+                  </span>
                   <div class="form-floating">
                     <input
                       type="text"
@@ -53,7 +55,9 @@
               </div>
               <div class="col-md-3">
                 <div class="input-group">
-                  <span class="input-group-text">#</span>
+                  <span class="input-group-text">
+                    <i class="bi bi-hash"></i>
+                  </span>
                   <div class="form-floating">
                     <input
                       type="text"
@@ -72,7 +76,9 @@
               </div>
               <div class="col-md-3">
                 <div class="input-group">
-                  <span class="input-group-text">$</span>
+                  <span class="input-group-text">
+                    <i class="bi bi-currency-dollar"></i>
+                  </span>
                   <div class="form-floating">
                     <input
                       type="text"
@@ -91,7 +97,9 @@
             <div class="row mb-3">
               <div class="col-md-6">
                 <div class="input-group">
-                  <span class="input-group-text">#</span>
+                  <span class="input-group-text">
+                    <i class="bi bi-at"></i
+                  ></span>
                   <div class="form-floating">
                     <input
                       type="text"
@@ -108,7 +116,9 @@
               </div>
               <div class="col-md-6">
                 <div class="input-group">
-                  <span class="input-group-text">#</span>
+                  <span class="input-group-text">
+                    <i class="bi bi-at"></i>
+                  </span>
                   <div class="form-floating">
                     <input
                       type="text"
@@ -127,7 +137,9 @@
             <div class="row mb-3">
               <div class="col-md-6">
                 <div class="input-group">
-                  <span class="input-group-text">C</span>
+                  <span class="input-group-text">
+                    <i class="bi bi-airplane"></i>
+                  </span>
                   <div class="form-floating">
                     <input
                       type="text"
@@ -144,7 +156,9 @@
               </div>
               <div class="col-md-3">
                 <div class="input-group">
-                  <span class="input-group-text">S</span>
+                  <span class="input-group-text">
+                    <i class="bi bi-globe-americas"></i>
+                  </span>
                   <div class="form-floating">
                     <select
                       type="text"
@@ -168,7 +182,9 @@
               </div>
               <div class="col-md-3">
                 <div class="input-group">
-                  <span class="input-group-text">P</span>
+                  <span class="input-group-text">
+                    <i class="bi bi-mailbox-flag"></i>
+                  </span>
                   <div class="form-floating">
                     <input
                       type="text"
@@ -191,27 +207,83 @@
                 <label for="paymentMethods" class="form-label"
                   >We accept:</label
                 >
-                <div class="mt-1">
-                  <span class="badge bg-secondary p-2">
-                    <i class="bi bi-credit-card"></i>Mastercard
-                  </span>
-                  <span class="badge bg-secondary p-2">
-                    <i class="bi bi-credit-card-fill"></i>Visa
-                  </span>
-                  <span class="badge bg-secondary p-2">
-                    <i class="bi-credit-card-2-front"></i>Capital One
-                  </span>
-                  <span class="badge bg-secondary p-2">
-                    <i class="bi-credit-card-2-front-fill"></i>American Express
-                  </span>
-                  <span class="badge bg-secondary p-2">
-                    <i class="bi bi-paypal"></i>Paypal
-                  </span>
+                <div>
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="paymentMethod"
+                    id="mastercard"
+                    value="mastercard"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-secondary" for="mastercard">
+                    <i class="bi bi-credit-card"></i> Mastercard
+                  </label>
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="paymentMethod"
+                    id="visa"
+                    value="visa"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-secondary" for="visa">
+                    <i class="bi bi-credit-card-fill"></i> Visa
+                  </label>
+
+                  <input
+                    type="radio"
+                    class="btn btn-check"
+                    name="paymentMethod"
+                    id="capitalone"
+                    value="capitalone"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-secondary" for="capitalone">
+                    <i class="bi bi-credit-card-2-front"></i> Capital One
+                  </label>
+                  <input
+                    type="radio"
+                    class="btn btn-check"
+                    name="paymentMethod"
+                    id="amex"
+                    value="amex"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-secondary" for="amex">
+                    <i class="bi bi-credit-card-2-front-fill"></i> American
+                    Express
+                  </label>
+                  <input
+                    type="radio"
+                    class="btn btn-check"
+                    name="paymentMethod"
+                    id="paypal"
+                    value="paypal"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-secondary" for="paypal">
+                    <i class="bi bi-paypal"></i> Paypal
+                  </label>
+                  <input
+                    type="radio"
+                    class="btn btn-check"
+                    name="paymentMethod"
+                    id="stripe"
+                    value="stripe"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-secondary" for="stripe">
+                    <i class="bi bi-stripe"></i> Stripe
+                  </label>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="input-group">
-                  <span class="input-group-text">E</span>
+                  <span class="input-group-text">
+                    <i class="bi bi-chat-left"></i>
+                  </span>
                   <div class="form-floating">
                     <textarea
                       name="userMessage"
@@ -221,7 +293,7 @@
                       autocapitalize="sentences"
                       autocorrect="on"
                       spellcheck="default"
-                      style="height: 100px"
+                      style="height: 90px"
                     ></textarea>
                     <label for="userMessage" class="form-label"
                       >Add any notes here</label
